@@ -1,31 +1,35 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-     <link rel="stylesheet" type="text/css" href="styles.css">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9332973890243574"
-     crossorigin="anonymous"></script>
-  </head>
-  <body>
-<html>
+<head>
+ <style>
+  body {
+   background-color: #1CB669;
+   padding: 30px;
+  }
+ </style>
+ <script>
+  function checkPassword() {
+   var password = document.getElementById("passwordBox");
+   var passwordText = password.value;
+   if(passwordText == "andrewos is the best") {
+    return true;
+   }
+   alert("Access denied! Incorrect password!");
+   return false;
+   }
+ </script>
+</head>
 <body>
-
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-<input type="submit">
-</form>
-
+ <p style="font-size: 30pt; font-family: 'Roboto', sans-serif;">Login here!</p>
+ <p>Please enter the password to view this special and secret page.</p>
+ <p>Name:<input id="name" type="text"/></p>
+ <p>Password:<input id="password" type="password"/></p>
+ <p>Birthdate:<input type="date" id="birthdate" name="birthdate"/></p>
+ <p>Age: (don't worry, age is just a number.)<input type="number" id="age" name="age"/></p>
+ <a href="monkdiamonddiscovery.html" onclick="return checkPassword();">
+  Click here to submit password and view website
+ </a>
 </body>
 </html>
 
-</body>
-</html>
 
-  </body>
-
-
-</html>
